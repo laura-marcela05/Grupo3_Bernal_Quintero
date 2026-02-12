@@ -1,7 +1,7 @@
 # 📚 Proyecto Grupo 3 - Bernal & Quintero
 
 Bienvenido al repositorio **Grupo3_Bernal_Quintero**.  
-Este proyecto ha sido desarrollado con el objetivo de organizar, documentar y compartir el trabajo realizado por el grupo.
+Este repositorioa ha sido desarrollado con el objetivo de organizar, documentar y compartir el trabajo realizado por el grupo.
 
 ---
 
@@ -22,8 +22,8 @@ Aquí encontrarás ejemplos, prácticas y materiales que reflejan el aprendizaje
 
 | Nombre | Rol |
 |--------|------|
-| **Julian Quimbayo** | Desarrollo, documentación y coordinación |
-| **Camilo Castro** | Desarrollo, pruebas y soporte técnico |
+| **Juan Camilo Bernal** | Desarrollo, documentación y coordinación |
+| **Laura Marcela Quintero** | Desarrollo, pruebas y soporte técnico |
  
 ---
 
