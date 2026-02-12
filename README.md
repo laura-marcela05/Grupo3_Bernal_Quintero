@@ -5,10 +5,9 @@ Este proyecto ha sido desarrollado con el objetivo de organizar, documentar y co
 
 ---
 
-## 👥 Autores
+## 🎯 Objetivo
 
-- **Jaun Bernal**  
-- **Laura Quintero**
+El propósito principal es fomentar el aprendizaje colaborativo y la organización del trabajo en equipo, asegurando que cada integrante pueda aportar y crecer en el proceso.
 
 ---
 
@@ -17,6 +16,15 @@ Este proyecto ha sido desarrollado con el objetivo de organizar, documentar y co
 Este repositorio contiene los recursos, código y documentación relacionados con el trabajo del **Grupo 3**.  
 Aquí encontrarás ejemplos, prácticas y materiales que reflejan el aprendizaje y desarrollo del equipo.
 
+---
+
+## 👥 Autores
+
+| Nombre | Rol |
+|--------|------|
+| **Julian Quimbayo** | Desarrollo, documentación y coordinación |
+| **Camilo Castro** | Desarrollo, pruebas y soporte técnico |
+ 
 ---
 
 ## 🗂️ Contenido
@@ -35,6 +43,15 @@ Puedes acceder al repositorio en GitHub aquí:
 
 ---
 
+## 🛠️ Tecnologías Utilizadas
+ 
+- HTML5  
+- CSS3  
+- JavaScript  
+- Git & GitHub  
+ 
+---
+
 ## 📌 Notas
 
 Este repositorio está en constante actualización.  
@@ -42,6 +59,3 @@ Se recomienda revisar periódicamente para acceder a las últimas mejoras y camb
 
 ---
 
-## 🎯 Objetivo
-
-El propósito principal es fomentar el aprendizaje colaborativo y la organización del trabajo en equipo, asegurando que cada integrante pueda aportar y crecer en el proceso.
