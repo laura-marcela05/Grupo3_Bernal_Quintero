@@ -1,29 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio Profesional</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-        <!-- Header -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+    <!-- Header -->
     <header class="main-header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="brand-container">
-                    <img src="https://raw.githubusercontent.com/code-corhuila/material-mineria-datos/b3725d694125ab35294ddfe415a327bc1445d32c/01-week/01-session/LOGO%20CORHUILA%20BLANCO%20PNG%20(2).png" alt="Logo Corhuila" class="logo-corhuila" style="max-width: 120px; height: auto; margin-bottom: 15px;">
-                    <h1 class="brand-name">
-                        <i class="fas fa-laptop-code"></i> Ingeniería de Sistemas
-                    </h1>
-                    <p class="brand-subtitle">Forma Profesionales Innovadores en Tecnología</p>
+      <div class="top-bar">
+        <div class="container"> 
+          <div class="brand-container">
+            <h1 class="brand-name">
+              <i class="fa-solid fa-laptop-code"></i> Portafolio Personal
+            </h1> 
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+            <ul>
+                <li><a href="#perfil" class="nav-link">Perfil</a></li>
+                <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+      </header>
+
+    <!--Contenido principal-->  
+    <main class="main-content">
+        <div class="container">
+            
+            <!--Seccion 1: Perfil profesional-->
+            <section id="perfil" class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-user-tie"></i> Sobre mí
+                </h2>
+
+                <p>Soy egresado de la universidad CORHUILA como ingeniero de sistemas, me considero una persona apasionada por el desarrollo de software,
+                     me caracterizo por ser una persona ágil en la resolución de problemas, por ser comprometido y siempre estar dispuesto a aprender.
+                 </p>
+
+                <h3 class="subsection-title">Habilidades Técnicas</h3>
+
+                <div class="cards-grid">
+                    <div class="card" style="border-left: 4px solid var(--primary-color);">
+                        <div class="card-icon"><i class="fas fa-code"></i></div>
+                        <h4 class="card-title">Desarrollo de Software</h4>
+                        <p>Tengo la capacidad para desarrollar aplicaciones web, móviles, utilizando lenguaje HTML, CSS y JavaScript.</p>
+                    </div>
+                    <div class="card" style="border-left: 4px solid var(--secondary-color);">
+                        <div class="card-icon"><i class="fas fa-database"></i></div>
+                        <h4 class="card-title">Base de Datos</h4>
+                        <p>Tengo competencias en diseño y administración de base de datos, comprendiendo las consultas SQL.</p>
+                    </div>
+                    <div class="card" style="border-left: 4px solid var(--accent-color);">
+                        <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4 class="card-title">Seguridad Informática</h4>
+                        <p>Capacidad para implementar medidas de seguridad y protección de información en sistemas tecnológicos.</p>
+                    </div>
+                    <div class="card" style="border-left: 4px solid var(--info-color);">
+                        <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                        <h4 class="card-title">Infraestructura TI</h4>
+                        <p>Competencia en arquitectura, diseño e implementación de infraestructuras de tecnología.</p>
+                    </div>
+                </div>    
+                <h3 class="subsection-title">Competencias Blandas</h3>
+                <ul class="content-list">
+                    <li><strong>Liderazgo:</strong> Tengo la capacidad para guiar equipos de trabajos extensos.</li>
+                    <li><strong>Trabajo en Equipo:</strong> Siempre tengo una disposición para colaborar a pesar de las dificultades de comunicación.</li>
+                    <li><strong>Pensamiento Crítico:</strong> Cuento con una buena capacidad de análisis que me permite solucionar problemas complejos.</li>
+                    <li><strong>Adaptabilidad:</strong> Tengo una buena flexibilidad ante cambios tecnológicos y del entorno, adaptándome rápidamente a estos.</li>
+                </ul>
+            </section>
+
+            <!-- Section 2: Especialidades -->
+            <section id="especialidades" class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-compass"></i> Áreas de Especialización
+                </h2>
+
+                <p>Mi enfoque va dirigido en fortalecer constantemente mis habilidades y conocimientos tecnológicos, de manera enfática en el interés del desarrollo
+                    de soluciones y resolución de problemas.
+                </p>
+
+                <div class="steps-container">
+                    <div class="step fade-in">
+                        <div class="step-number"></div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-globe"></i> Desarrollo Web</h3>
+                            <p>Especialización en tecnologías de construcción de aplicaciones web escalables.</p>
+                            <p style="margin-top: 10px; color: #666;"><strong>Tecnologías:</strong> JavaScript, HTML, CSS, Java</p>
+                        </div>
+                    </div>
+                    <div class="step bounce" style="animation-delay: 0.2s;">
+                        <div class="step-number"></div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-lock"></i> Seguridad Informática</h3>
+                            <p>Formación en ciberseguridad, protección de datos, auditoría informática y cumplimiento normativo.</p>
+                            <p style="margin-top: 10px; color: #666;"><strong>Áreas:</strong> Pentesting, Criptografía, SOC, Cumplimiento</p>
+                        </div>
+                    </div>
+                    <div class="step fade-in" style="animation-delay: 0.4s;">
+                        <div class="step-number"></div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-chart-bar"></i> Gestión y Consultoría TI</h3>
+                            <p>Formación en gobernanza informática, gestión de proyectos tecnológicos y consultoría empresarial.</p>
+                            <p style="margin-top: 10px; color: #666;"><strong>Metodologías:</strong> ITIL, COBIT, PMI, Scrum</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 3: Proyectos -->
+             <section id="proyectos" class="section"> 
+                <h2 class="section-title">
+                    <i class="fas fa-folder-open"></i>Proyectos
+                </h2>
+            <div class="projects-grid">
+                <!--Proyecto 1-->
+             <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://www.bing.com/th?id=OIP.at7Y7tp7jwWbX0Md0ssuHAHaEo" alt="proyecto 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Página web</h5>
+                    <p class="card-text">Página web desarrollada para un e-commerce emergente </p>
+             </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">HTML, CSS, JavaScript</li>
+                <li class="list-group-item">MySQL</li>
+                <li class="list-group-item">CRUD completo</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Ve proyecto</a>
+                <a href="#" class="card-link">Repositorio</a>
+             </div>
+             </div>
+             <!--Proyecto 2-->
+             <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://tse1.mm.bing.net/th/id/OIP.hHkUsCf58FQa5w8iIPQOSwHaFF?rs=1&pid=ImgDetMain&o=7&rm=3" alt="proyecto 2">
+                    <div class="card-body">
+                    <h5 class="card-title">App e-commerce</h5>
+                    <p class="card-text">Aplicación concentrada en el manejo y venta de ropa para mujer </p>
+             </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Java</li>
+                <li class="list-group-item">Buenas prácticas</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Ve proyecto</a>
+                <a href="#" class="card-link">Repositorio</a>
+             </div>
+             </div>
+             <!--Proyecto 3-->
+             <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://tse1.mm.bing.net/th/id/OIP.mnOokHs97biH0pdeXbzJtAHaEN?w=770&h=438&rs=1&pid=ImgDetMain&o=7&rm=3" alt="proyecto 3">
+                    <div class="card-body">
+                    <h5 class="card-title">Proyecto de seguridad</h5>
+                    <p class="card-text">Implementación de controles básicos de seguridad informática </p>
+             </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Gestión de accesos</li>
+                <li class="list-group-item">Repositorio</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Ve proyecto</a>
+                <a href="#" class="card-link">Repositorio</a>
+             </div>
+             </div>
+             </div>
+             </section>
+            <!-- Section 4: Contacto -->
+            <section id="contacto" class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-envelope"></i> Contáctame
+                </h2>
+
+                <p>¿Te interesa conocer más sobre mi trabajo? </p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 30px 0;">
+                   <!--Información personal (Inventada)-->
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 20px;">Información de Contacto</h4>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <h5 style="color: var(--secondary-color); margin-bottom: 8px;">
+                                <i class="fas fa-phone"></i> Teléfono
+                            </h5>
+                            <p>+57 3220018781</p>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <h5 style="color: var(--secondary-color); margin-bottom: 8px;">
+                                <i class="fas fa-envelope"></i> Email
+                            </h5>
+                            <p>juan.cardona500@gmail.com</p>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <h5 style="color: var(--secondary-color); margin-bottom: 8px;">
+                                <i class="fas fa-map-marker-alt"></i> Ubicación
+                            </h5>
+                            <p>Neiva, Huila<br>Colombia</p>
+                        </div>
+
+                        <div style="margin-bottom: 20px;">
+                            <h5 style="color: var(--secondary-color); margin-bottom: 8px;">
+                                <i class="fas fa-clock"></i> Horario
+                            </h5>
+                            <p>Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 20px;">Envíame un mensaje para ponernos en contacto</h4>
+                        <form id="contacto-form" style="background-color: var(--light-bg); padding: 20px; border-radius: 8px;">
+                            <div class="form-group">
+                                <label for="nombre-contacto">Nombre *</label>
+                                <input type="text" id="nombre-contacto" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email-contacto">Email *</label>
+                                <input type="email" id="email-contacto" name="email" placeholder="tu@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="asunto-contacto">Asunto *</label>
+                                <select id="asunto-contacto" name="asunto" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="info">Contratación</option>
+                                    <option value="admision">Colaboración de proyectos</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje-contacto">Mensaje *</label>
+                                <textarea id="mensaje-contacto" name="mensaje" rows="4" placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn" style="width: 100%;">
+                                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                            </button>
+                        </form>
+                        <div id="contacto-mensaje" style="display: none; background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; padding: 15px; border-radius: 4px; margin-top: 15px;">
+                            <i class="fas fa-check-circle"></i> ¡Gracias por tu mensaje! Nos pondremos en contacto pronto.
+                        </div>
+                    </div>
+                </div>
+            </section>   
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Enlaces Útiles</h3>
+                    <ul>
+                        <li><a href="#perfil">Sobre mí</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
                 </div>
             </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 - Actividad 1- Portafolio personal por el grupo 3. Todos los derechos reservados.</p>
+            </div>
         </div>
-    <section class="about"></section>
-    <section class="projects"></section>
-    <section class="skills"></section>
-    <footer class="footer"></footer>
-</body>
+    </footer>
+      <script src="Script.js"></script>
+  </body>
 </html>
