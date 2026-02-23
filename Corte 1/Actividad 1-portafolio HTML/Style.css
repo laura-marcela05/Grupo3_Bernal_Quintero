@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #773db6;
+  --secondary-color: #283032;
+  --accent-color: #78a890;
+  --light-bg: #f8f9fa;
+  --dark-text: #2c3e50;
+  --border-color: #e0e0e0;
+  --success-color: #e7d9b4;
+  --warning-color: #7cb490;
+  --info-color: #3498db;
+}
+
+body {
+  font-family: "Times New Roman", sans-serif;
+  line-height: 1.6;
+  color: var(--dark-text);
+  background-color: #fff;
+}
+
+.main-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.main-header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.project-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/*Animaciones*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.skill-badge {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+/*Footer*/
+.footer {
+  background-color: var(--dark-text);
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/*Responsivo*/
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
