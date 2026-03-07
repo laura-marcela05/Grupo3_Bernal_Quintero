@@ -2,130 +2,1149 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio CV - Desarrollador</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio CV - Desarrollador</title>
 
-    <!--Bootstrap 5 CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!--Bootstrap 5 CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 
-    <!--Font Awesome CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!--Font Awesome CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-    <!--CSS Personalizado-->
-    <link href="styles-portafolio.css" rel="stylesheet">
+  <!--CSS Personalizado-->
+  <link href="styles-portafolio.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- ========================
-     BARRA DE NAVEGACIÓN
+  <!-- ========================
+     BARRA DE NAVEGACIÓN 1
     =============================-->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#inicio">
-                <i class="fas fa-code"></i>Julián <span>.Dev</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#acerca">Acerca de mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#habilidades">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Experiencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#educacion">Educación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- ========================
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#inicio">
+        <i class="fas fa-code"></i>Portafolio_grupo_3 <span>.Dev</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <!--Dropdown Juan -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Juan Bernal</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="nav-link" href="#acerca">Acerca de mí</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#intereses">Intereses Profesionales</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#educacion">Educación</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </li>
+          <!--Dropdown Laura -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Laura Quintero</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="nav-link" href="#acerca-laura">Acerca de mí</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#habilidades-laura">Habilidades</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#intereses-laura">Intereses Profesionales</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#proyectos-laura">Proyectos</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#educacion-laura">Educación</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ========================
      SECCIÓN HERO
     =============================-->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <svg class="hero-image" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <rect width="200" height="200" fill="#3498db" />
-                <circle cx="100" cy="70" r="35" fill="#ecf0f1" />
-                <ellipse cx="100" cy="140" rx="50" ry="45" fill="#ecf0f1" />
-            </svg>
-            <h1>Julian Quimbayo</h1>
-            <p class="subtitle">Científico de Datos</p>
-            <p class="description">Especializado en crear modelos de predicción y análisis de datos.</p>
-            <a href="#contacto" class="btn btn-primary-custom">!Empecemos¡</a>
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <svg class="hero-image" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="200" fill="#3498db" />
+        <circle cx="100" cy="70" r="35" fill="#ecf0f1" />
+        <ellipse cx="100" cy="140" rx="50" ry="45" fill="#ecf0f1" />
+      </svg>
+      <h1>Portafolio del Grupo 3</h1>
+      <p class="subtitle">Programación web</p>
+      <p class="description">En este portafolio presentaremos información sobre nosotros, nuestras habilidades,
+        especialidades e intereses dentro del área de la tecnología y el desarrollo.</p>
+      <a href="#contacto" class="btn btn-primary-custom">¡Empecemos!</a>
 
 
 
-        </div>
+    </div>
 
-    </section>
-<!-- ========================
-     SECCIÓN ACERCA DE MI
+  </section>
+  <!-- ========================
+    Juan Camilo Bernal
     =============================-->
-    <section id="acerca" class="about">
-        <div class="container">
-            <h2 class="section-title">
-                Acerca de mí
-            </h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Científico de Datos</h3>
-                    <p>
-                        Soy un apasionado científico de datos con experiencia en análisis de datos,
-                        modelado predictivo y visualización. Me especializo en transformar datos </p>
-                    <p>complejos en información valiosa para la toma de decisiones estratégicas.
-                        Mi objetivo es utilizar mis habilidades para resolver problemas del mundo real y</p>
-                    <p>contribuir al éxito de las organizaciones a través del poder de los datos.</p>
-                    </p>
-                </div>
-                <div>
-                    <ul class="info-list">
-                        <li>
-                            <strong>Nombre:</strong> <span>Julian Quimbayo</span>
-                        </li>
-                        <li>
-                            <strong>Ubicación:</strong> <span>Huila, Neiva</span>
-                        </li>
-                        <li>
-                            <strong>Experiencia:</strong> <span>5+ años</span>
-                        </li>
-                        <li>
-                            <strong>Email:</strong> <span><a href="mailto:jaquimbayoc7@gmail.com"
-                                    style="color: var(--secondary-color);">jaquimbayoc7@gmail.com</a></span>
-                        </li>
-                        <li>
-                            <strong>Especialización:</strong> <span>Analítica de Datos</span>
-                        </li>
-                        <li>
-                            <strong>Disponibilidad:</strong> <span>Abierto a oportunidades</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <!-- ========================
+     SECCIÓN ACERCA DE MI 1
+    =============================-->
+  <section id="acerca" class="about">
+    <div class="container">
+      <h2 class="section-title">
+        Acerca de Juan Camilo Bernal
+      </h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Estudiante de Ingeniería de Sistemas</h3>
+          <p> Soy estudiante de Ingeniería de Sistemas con un fuerte interés en la programación y el desarrollo de
+            software,
+            área que me motivó a elegir esta carrera y en la que busco desarrollarme profesionalmente.
+            Me considero una persona responsable, comprometida y con gran capacidad de aprendizaje,
+            siempre dispuesto a adquirir nuevos conocimientos y mejorar mis habilidades técnicas.
+            Además, el deporte forma parte importante de mi vida, ya que me ha permitido desarrollar disciplina,
+            constancia y trabajo en equipo. Actualmente estoy en búsqueda de oportunidades que me permitan aplicar lo
+            aprendido,
+            seguir creciendo en el área de la programación y aportar valor a través del desarrollo de soluciones
+            tecnológicas.</p>
         </div>
-    </section>
+        <div>
+          <ul class="info-list">
+            <li>
+              <strong>Nombre:</strong> <span>Juan Bernal</span>
+            </li>
+            <li>
+              <strong>Ubicación:</strong> <span>Huila, Neiva</span>
+            </li>
+            <li>
+              <strong>Experiencia:</strong> <span>Sin experiencia</span>
+            </li>
+            <li>
+              <strong>Email:</strong> <span><a href="mailto:porterobernal@gmail.com"
+                  style="color: var(--secondary-color);">porterobernal@gmail.com</a></span>
+            </li>
+            <li>
+              <strong>Especialización:</strong> <span>Ninguna</span>
+            </li>
+            <li>
+              <strong>Disponibilidad:</strong> <span>Abierto a oportunidades</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!--==========================
+    HABILIDADES 1
+    =============================-->
+  <section id="habilidades" class="skills">
+    <div class="container">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="skills-grid">
+        <!--Frontend-->
+        <div class="skill-card" data-skill="frontend">
+          <h4><i class="fas fa-code"></i>Frontend</h4>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>HTML</span>
+              <span>55%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 55%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Git</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>CSS</span>
+              <span>50%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 50%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Bootstrap</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 70%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Backend-->
+        <div class="skill-card" data-skill="backend">
+          <h4><i class="fas fa-database"></i>Backend</h4>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Java</span>
+              <span>50%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 50%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Python</span>
+              <span>20%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 20%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>MongoDb</span>
+              <span>30%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 30%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>SQL</span>
+              <span>83%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 83%;"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--Herramientas-->
+        <div class="skill-card" data-skill="tools">
+          <h4><i class="fas fa-tools"></i>Herramientas</h4>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>GitHub</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Vscode</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 95%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Docker</span>
+              <span>78%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 78%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===============================
+    SECCIÓN INTERESES PROFESIONALES 1
+    =============================== -->
+  <section id="intereses" class="interests">
+    <div class="container">
+      <h2 class="section-title">Intereses Profesionales</h2>
+      <div class="timeline">
+        <!-- Interés 1 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Desarrollador de Software</h3>
+            <div class="timeline-date">
+              <i class="fas fa-calendar"></i> Futuro
+            </div>
+            <p class="timeline-description">
+              Estoy interesado en el desarrollo de software, especialmente en el área de desarrollo web y aplicaciones.
+              Me gustaría trabajar en proyectos que me permitan aplicar mis conocimientos y seguir aprendiendo en este campo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interés 2 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Desarrollador Web</h3>
+            <div class="timeline-date">
+              <i class="fas fa-calendar"></i> Futuro
+            </div>
+            <p class="timeline-description">
+              Me interesa el desarrollo web, tanto frontend como backend, y buscaría oportunidades para participar 
+              en proyectos que me permitan aplicar mis conocimientos y seguir aprendiendo en este campo.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interés 3 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Estructuras de Datos y Algoritmos</h3>
+            <div class="timeline-date">
+              <i class="fas fa-calendar"></i> Futuro
+            </div>
+            <p class="timeline-description">
+              Tengo un gran interés en las estructuras de datos y algoritmos, 
+              ya que considero que son fundamentales para el desarrollo de software eficiente y de calidad. 
+              Me gustaría profundizar mis conocimientos en este campo y aplicarlos en proyectos futuros.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===============================
+     SECCIÓN PROYECTOS ACADÉMICOS 1
+    =============================== -->
+  <section id="proyectos" class="projects">
+    <div class="container">
+      <h2 class="section-title">Proyectos Académicos</h2>
+      <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <div class="project-card fade-in-up">
+          <div class="project-image">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="project-content">
+            <h3>Gestión de Inventarios</h3>
+            <p>
+              Sistema de gestión de inventarios para una tienda en línea, con funcionalidades de seguimiento de productos,
+              actualización de stock en tiempo real y generación de reportes.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">IntelliJ IDEA</span>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Ver proyecto">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" title="Ver código">
+                <i class="fas fa-github"></i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project-card fade-in-up">
+          <div class="project-image">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <div class="project-content">
+            <h3>Sistema de supermercado</h3>
+            <p>
+              Sistema de supermercado con funcionalidades de gestión de productos, clientes y ventas. 
+            </p>
+            <div class="project-tags">
+              <span class="tag">C++</span>
+              <span class="tag">Replit</span>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Ver proyecto">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" title="Ver código">
+                <i class="fas fa-github"></i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project-card fade-in-up">
+          <div class="project-image">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-content">
+            <h3>Base de datos-Hotel</h3>
+            <p>
+              Un sistema de base de datos para la gestión de un hotel, con tablas para clientes, reservas, 
+              habitaciones y servicios.
+            </p>
+            <div class="project-tags">
+              <span class="tag">SQL</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Ver proyecto">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" title="Ver código">
+                <i class="fas fa-github"></i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===============================
+     SECCIÓN EDUCACIÓN 1
+    =============================== -->
+  <section id="educacion" class="education">
+    <div class="container">
+      <h2 class="section-title">Educación</h2>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <!-- Educación 1 -->
+          <div class="education-item">
+            <h3>Ingeniería de Sistemas</h3>
+            <div class="education-date">
+              <i class="fas fa-graduation-cap"></i> 2024 - Presente
+            </div>
+            <p class="education-school">Corporación Universitaria Del Huila (CORHUILA)</p>
+            <p>
+              Actualmente cursando el programa de Ingeniería de Sistemas, 
+              con enfoque en desarrollo de software y análisis de datos. 
+              Participación activa en proyectos académicos y desarrollo de habilidades técnicas para el futuro profesional.
+            </p>
+          </div>
+
+          <!-- Educación 2 -->
+          <div class="education-item">
+            <h3>Técnico: Implementación y Mantenimiento de Equipos Electrónicos Industriales</h3>
+            <div class="education-date">
+              <i class="fas fa-certificate"></i> Noviembre 2023
+            </div>
+            <p class="education-school">SENA</p>
+            <p>
+              Técnico en implementación y mantenimiento de equipos electrónicos industriales, 
+              con conocimientos en sistemas de control, automatización y electrónica aplicada a la industria.
+            </p>
+          </div>
+
+          <!-- Educación 3 -->
+          <div class="education-item">
+            <h3>Certificación: Partner: CPA - Programming Essentials in C++</h3>
+            <div class="education-date">
+              <i class="fas fa-certificate"></i> Mayo 2024
+            </div>
+            <p class="education-school">Cisco Networking Academy</p>
+            <p>
+              Curso de programación en C++ que cubre conceptos fundamentales como variables, 
+              estructuras de control, funciones y programación.
+            </p>
+          </div>
+
+          <!-- Educación 4 -->
+          <div class="education-item">
+            <h3>Certificación: HTML Essentials</h3>
+            <div class="education-date">
+              <i class="fas fa-certificate"></i> 2025
+            </div>
+            <p class="education-school">Cisco Networking Academy</p>
+            <p>
+              Curso de fundamentos de HTML, cubriendo la estructura básica de páginas web, 
+              etiquetas esenciales y buenas prácticas de desarrollo web.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+     LAURA QUINTERO 
+    =============================-->
+  <!-- ========================
+     SECCIÓN ACERCA DE MI 
+    =============================-->
+  <section id="acerca-laura" class="about">
+    <div class="container">
+      <h2 class="section-title">
+        Acerca de Laura Quintero
+      </h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Estudiante de Ingeniería de Sistemas</h3>
+          <p>
+            Estudiante de Ingeniería de Sistemas, considero que tengo
+            una sólida base en los principios de el análisis de requerimientos.
+            Me apasiona la tecnología y busco
+            activamente oportunidades para
+            aprender y aplicar mis conocimientos.
+            Poseo facilidad para la resolución de
+            problemas, un fuerte compromiso
+            con el trabajo en equipo y la mejora
+            continua. Abierta a nuevos desafíos y
+            con gran disposición para apoyar en
+            proyectos tecnológicos. </p>
+        </div>
+        <div>
+          <ul class="info-list">
+            <li>
+              <strong>Nombre:</strong> <span>Laura Quintero Poveda</span>
+            </li>
+            <li>
+              <strong>Ubicación:</strong> <span>Huila, Neiva</span>
+            </li>
+            <li>
+              <strong>Experiencia:</strong> <span>Sin experiencia</span>
+            </li>
+            <li>
+              <strong>Email:</strong> <span><a href="mailto:jaquimbayoc7@gmail.com"
+                  style="color: var(--secondary-color);">laura-2020@gmail.com</a></span>
+            </li>
+            <strong>Disponibilidad:</strong> <span>Abierta a oportunidades</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    HABILIDADES 2
+    =============================-->
+  <section id="habilidades-laura" class="skills">
+    <div class="container">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="skills-grid">
+        <!--Frontend-->
+        <div class="skill-card" data-skill="frontend">
+          <h4><i class="fas fa-code"></i>Frontend</h4>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>HTML</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Git</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>CSS</span>
+              <span>68%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 68%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Bootstrap</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 75%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Backend-->
+        <div class="skill-card" data-skill="backend">
+          <h4><i class="fas fa-database"></i>Backend</h4>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>SQL</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Java</span>
+              <span>50%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 50%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Python</span>
+              <span>25%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 25%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>MongoDB</span>
+              <span>25%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 25%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Herramientas-->
+        <div class="skill-card" data-skill="tools">
+          <h4><i class="fas fa-tools"></i>Herramientas</h4>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>GitHub</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 95%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Vscode</span>
+              <span>87%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 87%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Docker</span>
+              <span>78%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--target: 95%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+    SECCIÓN INTERESES PROFESIONALES 2
+    =============================== -->
+  <section id="intereses-laura" class="interests">
+    <div class="container">
+      <h2 class="section-title">Intereses Profesionales</h2>
+      <div class="timeline">
+        <!-- Interés 1 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Desarrollo De Backend</h3>
+            <div class="timeline-date">
+              <i class="fas fa-calendar"></i> Futuro
+            </div>
+            <p class="timeline-description">
+              Me interesa el desarrollo de backend, especialmente en la creación de APIs RESTful y la gestión de bases de datos.
+              Buscaría oportunidades para aprender y aplicar tecnologías como Node.js, Express y MongoDB.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interés 2 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Aprendizaje de nuevas tecnologías</h3>
+            <div class="timeline-date">
+              <i class="fas fa-calendar"></i> Futuro
+            </div>
+            <p class="timeline-description">
+              Estaría interesada en aprender nuevas tecnologías y y frameworks de desarrollo web.
+              Me motiva la idea de ampliar mis conocimientos y habilidades para ser una desarrolladora versátil y adaptable
+              a las demandas del mercado laboral.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interés 3 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Desarrollo de Aplicaciones</h3>
+            <div class="timeline-date">
+              <i class="fas fa-calendar"></i> Futuro
+            </div>
+            <p class="timeline-description">
+              Me interesa el desarrollo de aplicaciones, tanto web como móviles, y busco oportunidades 
+              para participar en proyectos que me permitan aplicar mis conocimientos y seguir aprendiendo en este campo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===============================
+    SECCIÓN PROYECTOS ACADÉMICOS 2
+    =============================== -->
+  <section id="proyectos-laura" class="projects">
+    <div class="container">
+      <h2 class="section-title">Proyectos Académicos</h2>
+      <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <div class="project-card fade-in-up">
+          <div class="project-image">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="project-content">
+            <h3>Gestión de Biblioteca</h3>
+            <p>
+              Sistema de gestión para una biblioteca, incluyendo catálogo de libros, préstamos y devoluciones.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">IntelliJ IDEA</span>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Ver proyecto">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" title="Ver código">
+                <i class="fas fa-github"></i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project-card fade-in-up">
+          <div class="project-image">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <div class="project-content">
+            <h3>Sistema de Calculadora</h3>
+            <p>
+              Sistema de calculadora con funcionalidades básicas.
+            </p>
+            <div class="project-tags">
+              <span class="tag">C++</span>
+              <span class="tag">Replit</span>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Ver proyecto">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" title="Ver código">
+                <i class="fas fa-github"></i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project-card fade-in-up">
+          <div class="project-image">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-content">
+            <h3>Base de Datos-Hospital</h3>
+            <p>
+              Sistema de base de datos para la gestión de un hospital, con tablas para pacientes, citas, médicos y tratamientos.
+            </p>
+            <div class="project-tags">
+              <span class="tag">SQL</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" title="Ver proyecto">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+              <a href="#" title="Ver código">
+                <i class="fas fa-github"></i> Código
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+    SECCIÓN EDUCACIÓN 2
+    =============================== -->
+  <section id="educacion-laura" class="education">
+    <div class="container">
+      <h2 class="section-title">Educación</h2>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <!-- Educación 1 -->
+          <div class="education-item">
+            <h3>Ingeniería de Sistemas</h3>
+            <div class="education-date">
+              <i class="fas fa-graduation-cap"></i> 2024 - Actualidad
+            </div>
+            <p class="education-school">Corporación Universitaria Del Huila (CORHUILA)</p>
+            <p>
+              Actualmente cursando el programa de Ingeniería de Sistemas, con enfoque en desarrollo de software y 
+              análisis de datos. Participación activa en proyectos académicos y desarrollo de habilidades técnicas
+              para el futuro profesional.
+            </p>
+          </div>
+
+          <!-- Educación 2 -->
+          <div class="education-item">
+            <h3>Manejo de Herramientas Microsoft Office 2021: Excel</h3>
+            <div class="education-date">
+              <i class="fas fa-certificate"></i> Marzo 2021
+            </div>
+            <p class="education-school">SENA</p>
+            <p>
+              Certificación en manejo avanzado de Microsoft Excel, incluyendo funciones, 
+              tablas dinámicas y análisis de datos.
+            </p>
+          </div>
+
+          <!-- Educación 3 -->
+          <div class="education-item">
+            <h3>Diplomado de diseño y marketing empresarial</h3>
+            <div class="education-date">
+              <i class="fas fa-certificate"></i> Noviembre 2022
+            </div>
+            <p class="education-school">Colegio Empresarial de los Andes</p>
+            <p>
+              Diplomado en marketing digital orientado a la creación de un producto o servicio innovador.
+            </p>
+          </div>
+
+          <!-- Educación 4 -->
+          <div class="education-item">
+            <h3>Desarrollo Web con PHP</h3>
+            <div class="education-date">
+              <i class="fas fa-certificate"></i> Mayo 2023
+            </div>
+            <p class="education-school">SENA</p>
+            <p>
+             Curso de desarrollo web utilizando PHP, estructuras básicas de programación y conexión con base de datos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+    SECCIÓN CONTACTO
+    =============================== -->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <h2 class="section-title">¡Ponte en Contacto!</h2>
+      <p>No dudes en comunicarte si tienes alguna oportunidad.</p>
+
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <i class="fas fa-envelope"></i>
+          <p><a href="mailto:juan@example.com" style="color: white;">juan@example.com</a></p>
+          <p><a href="mailto:laura@example.com" style="color: white;">laura@example.com</a></p>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-phone"></i>
+          <p><a href="tel:+573001234567" style="color: white;">+57 3144431087</a></p>
+          <p><a href="tel:+573001234567" style="color: white;">+57 3112001091</a></p>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Neiva, Huila, Colombia</p>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/laura-marcela05/Grupo3_Bernal_Quintero" title="GitHub" class="social-link" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Tu email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="message" placeholder="Va dirigido a:" required></textarea>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="message" placeholder="Tu mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============================
+         FOOTER
+         =============================== -->
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2026 Juan Bernal y Laura Quintero. Hecho con <span class="heart">❤</span> usando Bootstrap 5.
+            </p>
+        </div>
+    </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Script personalizado-->
+  <script src="script-portafolio.js"></script>
+
+  <!-- JavaScript Personalizado -->
+  <script>
+    // ===============================
+    // VARIABLES GLOBALES
+    // ===============================
+    const backToTopBtn = document.getElementById('backToTop');
+    const skillProgressBars = document.querySelectorAll('.skill-progress');
+    const contactForm = document.getElementById('contactForm');
+
+    // ===============================
+    // BACK TO TOP BUTTON
+    // ===============================
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // ===============================
+    // ANIMACIÓN DE BARRAS DE HABILIDADES
+    // ===============================
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const progressBar = entry.target;
+          const targetWidth = progressBar.style.getPropertyValue('--target') || '0';
+
+          // Animar la barra
+          let currentWidth = 0;
+          const increment = parseFloat(targetWidth) / 50;
+          const interval = setInterval(() => {
+            currentWidth += increment;
+            if (currentWidth >= parseFloat(targetWidth)) {
+              currentWidth = parseFloat(targetWidth);
+              clearInterval(interval);
+            }
+            progressBar.style.width = currentWidth + '%';
+          }, 20);
+
+          observer.unobserve(progressBar);
+        }
+      });
+    }, observerOptions);
+
+    skillProgressBars.forEach(bar => {
+      bar.style.width = '0%';
+      observer.observe(bar);
+    });
+
+    // ===============================
+    // FORMULARIO DE CONTACTO
+    // ===============================
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Validación básica
+      if (!name || !email || !message) {
+        mostrarAlerta('Por favor completa todos los campos', 'warning');
+        return;
+      }
+
+      // Validar email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        mostrarAlerta('Por favor ingresa un email válido', 'warning');
+        return;
+      }
+
+      // Simular envío de email
+      const btnSubmit = contactForm.querySelector('.btn-submit');
+      const textOriginal = btnSubmit.textContent;
+      btnSubmit.textContent = 'Enviando...';
+      btnSubmit.disabled = true;
+
+      setTimeout(() => {
+        mostrarAlerta('¡Mensaje enviado exitosamente! Nos pondremos en contacto pronto.', 'success');
+        contactForm.reset();
+        btnSubmit.textContent = textOriginal;
+        btnSubmit.disabled = false;
+      }, 1500);
+    });
+
+    // ===============================
+    // FUNCIÓN PARA MOSTRAR ALERTAS
+    // ===============================
+    function mostrarAlerta(mensaje, tipo = 'info') {
+      const alertDiv = document.createElement('div');
+      alertDiv.className = `alert alert-${tipo} alert-dismissible fade show position-fixed`;
+      alertDiv.style.cssText = `
+                top: 100px;
+                right: 20px;
+                z-index: 5000;
+                min-width: 300px;
+            `;
+      alertDiv.textContent = mensaje;
+      alertDiv.innerHTML += '<button type="button" class="btn-close" data-bs-dismiss="alert"></button>';
+
+      document.body.appendChild(alertDiv);
+
+      setTimeout(() => {
+        alertDiv.remove();
+      }, 4000);
+    }
+
+    // ===============================
+    // EFECTO DE FADE-IN AL SCROLL
+    // =============================== */
+    const fadeElements = document.querySelectorAll('.fade-in-up');
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transition = 'opacity 0.8s ease';
+      fadeObserver.observe(el);
+    });
+
+    // ===============================
+    // ACTIVE LINK EN NAVEGACIÓN
+    // ===============================
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const sections = document.querySelectorAll('section[id]');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (window.pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').slice(1) === current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // ===============================
+    // CERRAR MENÚ MÓVIL AL HACER CLICK
+    // ===============================
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // No cerrar menú si es un dropdown
+        if (!link.classList.contains('dropdown-toggle') && navbarCollapse.classList.contains('show')) {
+          navbarToggler.click();
+        }
+      });
+    });
+
+    // ===============================
+    // ANIMACIÓN DE ELEMENTOS AL CARGAR
+    // ===============================
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.5s ease';
+
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
+    });
+
+    // ===============================
+    // LOG EN LA CONSOLA
+    // ===============================
+    console.log('%cBienvenido a mi portafolio', 'font-size: 20px; color: #3498db; font-weight: bold;');
+    console.log('%c¿Te interesa trabajar juntos? Ponte en contacto conmigo', 'font-size: 14px; color: #e74c3c;');
+  </script>
+
 </body>
 
 </html>

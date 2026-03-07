@@ -7,49 +7,51 @@
     --accent-color: #e74c3c;
     --light-bg: #ecf0f1;
     --text-dark: #2c3e50;
-    --text-light: #7f8c8d;}
+    --text-light: #7f8c8d;
+}
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-dark);
-    line-height: 1.6; 
+    line-height: 1.6;
 }
+
 /*-- ========================
      BARRA DE NAVEGACIÓN
     =============================*/
-.navbar{
+.navbar {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color)100%);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 1000;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-weight: 700;
     font-size: 1.5rem;
     color: white !important;
     letter-spacing: 1px;
 }
 
-.navbar-brand span{
+.navbar-brand span {
     color: var(--accent-color);
 }
 
-.navbar-nav .nav-link{
-    color: rgba(255,255,255,0.8) !important;
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
     margin-left: 1rem;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover{
+.navbar-nav .nav-link:hover {
     color: var(--accent-color) !important;
 }
 
@@ -57,9 +59,9 @@ body{
      SECCIÓN HERO (PORTADA)
     =============================*/
 
-.hero{
+.hero {
     background: linear-gradient(135deg, var(--primary-color)0%, var(--secondary-color)100%);
-    color:white;
+    color: white;
     padding: 120px 0;
     text-align: center;
     position: relative;
@@ -78,12 +80,12 @@ body{
     opacity: 0.5;
 }
 
-.hero-content{
+.hero-content {
     position: relative;
     z-index: 2;
 }
 
-.hero-image{
+.hero-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -131,4 +133,161 @@ body{
     background-color: #c0392b;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* ===============================
+   ANIMACIONES
+   =============================== */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* ===============================
+   SECCIÓN ACERCA DE MI
+   =============================== */
+   .about{
+    padding: 80px 0;
+    background-color: #fff;
+   }
+
+   .section-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 100px;
+    color:var(--primary-color );
+    position:relative;
+    text-align: center;
+   }
+
+   .section-title::after{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin:20px auto 0;
+    border-radius: 2px;
+   }
+
+   .about-content{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap:50px;
+   align-items: center;
+   }
+
+   .about-text h3{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+   }
+
+   .about-text p{
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-bottom: 15px;
+    line-height: 1.8;
+   }
+
+   .info-list{
+    list-style: none;
+    margin-top: 30px;
+   }
+
+   .info-list li{
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light-bg  );
+  display: flex;
+    align-items: center;
+   }
+
+   .info-list li:last-child{
+    border-bottom: none;
+   }
+
+   .info-list strong{
+    color:var(--primary-color);
+    min-width: 120px;
+   }
+
+   /* ===============================
+   SECCIÓN HABILIDADES
+   =============================== */
+.skills {
+    padding: 80px 0;
+    background-color: var(--light-bg);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.skill-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+    width: 0%;
+    transition: width 1s ease;
+    border-radius: 10px;
 }
